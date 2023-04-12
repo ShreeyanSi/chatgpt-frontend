@@ -2,11 +2,14 @@
   "name": "chatgpt-messenger-yt",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://ShreeyanSi.github.io/chatgpt-frontend",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.17",
@@ -18,6 +21,7 @@
   "devDependencies": {
     "@types/node": "18.15.11",
     "@types/react": "18.0.34",
+    "gh-pages": "^5.0.0",
     "typescript": "5.0.4"
   }
 }
